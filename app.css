@@ -1,0 +1,264 @@
+/*10,000+ of our users love our products. We only provide great products
+    combined with excellent customer service. See what our satisfied customers
+    are saying about our services. Rated 5 Stars in Reviews Rated 5 Stars in
+    Report Guru Rated 5 Stars in BestTech Colton Smith Verified Buyer "We needed
+    the same printed design as the one we had ordered a week prior. Not only did
+    they find the original order, but we also received it in time. Excellent!"
+    Irene Roberts Verified Buyer "Customer service is always excellent and very
+    quick turn around. Completely delighted with the simplicity of the purchase
+    and the speed of delivery." Anne Wallace Verified Buyer "Put an order with
+    this company and can only praise them for the very high standard. Will
+    definitely use them again and recommend them to everyone!"
+    
+    ## Colors
+
+### Primary
+
+Very Dark Magenta: hsl(300, 43%, 22%)
+Soft Pink: hsl(333, 80%, 67%)
+
+### Neutral
+
+Dark Grayish Magenta: hsl(303, 10%, 53%)
+Light Grayish Magenta: hsl(300, 24%, 96%)
+White: hsl(0, 0%, 100%)
+    
+    */
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap");
+
+html {
+  font-size: 15px;
+  font-family: "Spartan", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  flex-direction: column;
+  background-color: hsl(0, 0%, 100%);
+  overflow: scroll;
+}
+.container {
+  height: 80%;
+  width: 80%;
+}
+.attribution {
+  position: absolute;
+  top: 100%;
+}
+.bgTop {
+  width: 50%;
+  height: 50%;
+  min-width: 300px;
+  min-height: 300px;
+  background-image: url(./images/bg-pattern-top-desktop.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.bgBottom {
+  width: 50%;
+  height: 50%;
+  min-width: 300px;
+  min-height: 300px;
+  background-image: url(./images/bg-pattern-bottom-desktop.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+.mainTop,
+.mainBottom {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.topLeft,
+.topRight {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+.head {
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: hsl(300, 43%, 22%);
+  margin-bottom: 1rem;
+  margin-right: 30%;
+  text-align: left;
+}
+.para1 {
+  font-weight: 300;
+  font-size: 1rem;
+  margin-right: 30%;
+}
+.ratingText {
+  display: inline-block;
+  color: hsl(300, 43%, 22%);
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 1rem;
+}
+.ratingCard {
+  width: 70%;
+  min-width: fit-content;
+  min-height: fit-content;
+  background-color: hsl(300, 24%, 96%);
+  padding: 20px;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+.card2 {
+  position: relative;
+  left: 10%;
+}
+.card3 {
+  position: relative;
+  left: 20%;
+}
+.mainBottom {
+  justify-content: space-between;
+  align-items: center;
+}
+.bottomCards {
+  width: 30%;
+  height: 100%;
+  max-width: 500px;
+  max-height: 300px;
+  background-color: hsl(300, 43%, 22%);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.imageCont {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-left: 2rem;
+  margin-bottom: 2rem;
+}
+.profilePic {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+}
+.name {
+  display: inline-block;
+  color: white;
+  font-size: 1rem;
+}
+.subName {
+  color: hsl(333, 80%, 67%);
+  font-size: 1rem;
+  font-weight: 500;
+}
+.para2 {
+  font-size: 1rem;
+  color: white;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+}
+.Bcard2 {
+  position: relative;
+  top: 5%;
+}
+.Bcard3 {
+  position: relative;
+  top: 10%;
+}
+
+.imgText {
+  margin-left: 1rem;
+}
+
+@media screen and (max-width: 900px) {
+  html {
+    font-size: 15px;
+  }
+  body {
+    min-height: 100vh;
+    position: relative;
+  }
+  .container {
+    min-height: 100%;
+    max-height: fit-content;
+    min-width: 100%;
+  }
+  .mainTop {
+    min-height: fit-content;
+    max-width: fit-content;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .head,
+  .para1 {
+    margin: 0;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  .card2,
+  .card3 {
+    left: 0;
+  }
+  .ratingText {
+    display: block;
+    text-align: center;
+  }
+  .ratingCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .mainBottom {
+    min-height: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .bottomCards {
+    height: 30%;
+    width: 80%;
+    min-height: 220px;
+  }
+  .topLeft,
+  .topRight,
+  .mainTop {
+    height: fit-content;
+  }
+  .topLeft {
+    max-width: 80%;
+  }
+  .attribution {
+    position: fixed;
+    top: 95%;
+  }
+}
