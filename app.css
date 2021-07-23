@@ -79,8 +79,8 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
   position: absolute;
-  bottom: 0;
-  right: 0;
+  bottom: 0%;
+  right: 0%;
   z-index: -1;
 }
 .mainTop,
@@ -103,15 +103,15 @@ body {
 }
 .head {
   font-weight: 700;
-  font-size: 2.5rem;
+  font-size: 3rem;
   color: hsl(300, 43%, 22%);
   margin-bottom: 1rem;
   margin-right: 30%;
   text-align: left;
 }
 .para1 {
-  font-weight: 300;
-  font-size: 1rem;
+  font-weight: 400;
+  font-size: 0.975rem;
   margin-right: 30%;
 }
 .ratingText {
